@@ -1,0 +1,20 @@
+** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #101010;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: inter;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+@theme {
+  --color-whyte: #f7f7f7;
+  --color-blu: #446d9b;
+  --color-blak: #101010;
+}
