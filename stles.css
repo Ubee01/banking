@@ -9,10 +9,11 @@ body {
   padding-right: 30px;
   font-family: inter;
 }
-img {
+/* img {
   width: 100%;
   height: auto;
-}
+} */
+
 @theme {
   --color-whyte: #f7f7f7;
   --color-blu: #446d9b;
