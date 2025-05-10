@@ -19,3 +19,40 @@ body {
   --color-blu: #446d9b;
   --color-blak: #101010;
 }
+
+#accordion li {
+  width: 100%;
+  list-style: none;
+  max-width: 870px;
+  background-color: #b2bdca;
+  margin-bottom: 7px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#accordion li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(163, 117, 48);
+}
+
+#accordion label + input[type="radio"] {
+  display: none;
+}
+
+#accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+}

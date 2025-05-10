@@ -27,7 +27,7 @@
     <style type="text/tailwindcss"></style>
   </head>
   <body>
-    <!-- <header class="flex justify-between mx-[64px] items-center">
+    <header class="flex justify-between mx-[64px] items-center">
       <div><img src="bank assets/Group 14.svg" /></div>
       <div class="flex space-x-[30px] items-center">
         <div>
@@ -53,7 +53,7 @@
           </button>
         </div>
       </div>
-    </header> -->
+    </header>
 
     <section class="flex flex-col gap-6 my-[100px] text-center">
       <div
@@ -61,7 +61,7 @@
       >
         <div>
           <h2
-            class="text-center xs:font-[3xl] xs:text-[28px] sm:font-[5xl] sm: text-[40px] text-[30px ]md:font-[5xl] md:text-[50px] lg:font-[7xl] lg:text-[64px]"
+            class="text-center font-semibold text-[40px] md:text-[50px] lg:font-[7xl] lg:text-[64px]"
           >
             Charge card made to keep up with you.
           </h2>
@@ -443,6 +443,110 @@
     </section>
 
     <section
+      class="mt-[100px] mx-auto flex flex-col justify-center items-center gap-[60px] min-h-[100vh] max-w-[870px] w-full"
+    >
+      <div class="flex flex-col gap-[10px] text-center">
+        <div>
+          <h3 class="font-semibold text-[40px] lg:text-[48px]">
+            Frequently asked questions
+          </h3>
+        </div>
+        <div>
+          <p>
+            Find quick answers to common queries in our Frequently Asked
+            Questions section.
+          </p>
+
+          <p>
+            Your key to instant clarity on all things related to our charge card
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <ul id="accordion">
+          <li>
+            <label for="first"
+              >When do segments update?
+              <span><i class="fa-solid fa-angle-down"></i></span
+            ></label>
+            <input type="radio" name="when" id="first" checked />
+            <div class="content">
+              <p>
+                Segment open at 8am for physical offices.Our online platforms
+                are available for transactions 24/7. we are ready to serve you
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <label for="fourth"
+              >How can I talk to someone at Fintekie?
+              <span><i class="fa-solid fa-angle-down"></i></span
+            ></label>
+            <input type="radio" name="when" id="fourth" />
+            <div class="content">
+              <p>
+                Our call lines and social media handles are readily
+                available.There is a 24/7 customer support for all your
+                troubles. Walking into our bank will serve you as we are always
+                ready
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <label for="second"
+              >How do refunds work?
+              <span><i class="fa-solid fa-angle-down"></i></span
+            ></label>
+            <input type="radio" name="when" id="second" />
+            <div class="content">
+              <p>
+                Report any financial issues you encounter. Request for a bank
+                statement to confirm and for fraud get a court order from
+                recipients bank.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <label for="third"
+              >What will I learn in Fintekie Academy?
+              <span><i class="fa-solid fa-angle-down"></i></span
+            ></label>
+            <input type="radio" name="when" id="third" />
+            <div class="content">
+              <p>
+                Students at Fintech academy are excellently trained. They are
+                equipped with great knowledge for the banking and finance
+                sector. They have great financial advice you can bank on
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col gap-[10px] text-center">
+        <div>
+          <h3 class="font-semibold text-[40px] lg:text-[48px]">
+            Still have a question?
+          </h3>
+        </div>
+        <div>
+          <p>Go ahead and reach out to us if you have more questions</p>
+        </div>
+        <div>
+          <button
+            class="px-[20px] py-[10px] bg-[#446D9B] text-[#F7F7F7] rounded-[10px] cursor-pointer"
+          >
+            Contact us
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
       class="mt-[100px] flex flex-col lg:flex-row gap-[50px] lg:gap-[83px] justify-center"
     >
       <div
@@ -559,5 +663,7 @@
         </div>
       </div>
     </footer>
+
+    <script></script>
   </body>
 </html>
