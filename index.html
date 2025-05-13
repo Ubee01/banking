@@ -31,13 +31,44 @@
       class="flex justify-around lg:justify-between items-center top-0 w-full"
     >
       <div><img class="text-[90px]" src="bank assets/Group 14.svg" /></div>
+      <div class="hidden lg:block lg:flex lg:space-x-[30px] items-center">
+        <div>
+          <div>
+            <ul class="flex space-x-[30px] font-[24px]">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Legal</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="flex space-x-[10px]">
+          <div>
+            <button
+              class="py-[15px] px-[30px] bg-[whyte] text-[blak] rounded-[12px] border-1 border-black hover:bg-blue-600 cursor-pointer"
+            >
+              Login
+            </button>
+          </div>
+          <div>
+            <button
+              class="py-[15px] px-[30px] bg-[#446d9b] text-[whyte] rounded-[12px] border-1 border-black hover:bg-blue-600 cursor-pointer"
+            >
+              Sign up
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile -->
+
       <div
         id="mobile"
-        class="hidden py-[20px] absolute top-[80px] left-0 right-0 text-center bg-[rgb(170,141,141)] overflow-hidden lg:block lg:flex space-y-[30px] lg:space-x-[30px] items-center"
+        class="hidden py-[20px] absolute top-[80px] left-0 right-0 text-center bg-[rgb(170,141,141)] overflow-hidden items-center"
       >
         <div>
           <div>
-            <ul class="flex flex-col space-y-[30px] font-[16px]">
+            <ul class="flex flex-col space-y-[30px] font-[24px]">
               <li><a href="#">Home</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Legal</a></li>
@@ -66,11 +97,9 @@
       <div id="menuToggle" class="lg:hidden">
         <span><i class="fa-solid fa-bars text-[50px]"></i></span>
       </div>
-
-      <!-- mobile -->
     </header>
 
-    <section class="flex flex-col gap-6 my-[100px] text-center">
+    <section class="flex flex-col gap-6 my-[40px] lg:my-[100px] text-center">
       <div
         class="flex flex-col gap-6 w-full xs:max-w-[280px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[889px] mx-auto text-center"
       >
@@ -596,8 +625,10 @@
       </div>
     </section>
 
-    <footer class="flex justify-center flex-wrap gap-[60px] lg:gap-[100px]">
-      <div class="pt-[50px] lg-pt-[0] flex items-center flex-col gap-[24px]">
+    <footer
+      class="mt-[100px] flex justify-center flex-wrap gap-[60px] lg:gap-[100px]"
+    >
+      <div class="flex items-center flex-col gap-[24px]">
         <div><img src="bank assets/Group 14.svg" /></div>
         <div>
           <p>
