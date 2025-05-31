@@ -1,21 +1,38 @@
-** {
+/* ** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
+
 body {
   color: #101010;
   padding-left: 30px;
   padding-right: 30px;
+  max-width: 1500px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   font-family: inter;
+  line-height: 1.4;
 }
-header {
-  padding: 0;
+
+#hero {
+  line-height: 1.4;
 }
+
 /* img {
   width: 100%;
   height: auto;
 } */
+:root {
+  --header-height: 90px;
+}
+
+header {
+  max-height: var(--header-height);
+  height: 100%;
+}
 
 @theme {
   --color-whyte: #f7f7f7;
@@ -26,7 +43,7 @@ header {
 #accordion li {
   width: 100%;
   list-style: none;
-  max-width: 870px;
+  max-width: 1000px;
   background-color: #b2bdca;
   margin-bottom: 7px;
   padding: 10px;

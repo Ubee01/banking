@@ -23,13 +23,12 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="stles.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
     <style type="text/tailwindcss"></style>
   </head>
   <body>
-    <header
-      class="p-[40px] flex justify-around lg:justify-between items-center"
-    >
+    <header class="py-5 flex justify-between items-center">
       <div><img class="text-[90px]" src="bank assets/Group 14.svg" /></div>
       <div class="hidden lg:block lg:flex lg:space-x-[30px] items-center">
         <div>
@@ -64,11 +63,11 @@
 
       <div
         id="mobile"
-        class="hidden py-[20px] absolute top-[80px] left-0 right-0 text-center bg-[rgb(170,141,141)] overflow-hidden items-center"
+        class="hidden py-[20px] fixed top-20 left-0 right-0 text-center bg-[rgb(170,141,141)] overflow-hidden items-center"
       >
         <div>
           <div>
-            <ul class="flex flex-col space-y-[30px] font-[24px]">
+            <ul class="flex flex-col space-y-[30px] text-[30px]">
               <li><a href="#">Home</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">Legal</a></li>
@@ -79,14 +78,14 @@
         <div class="flex flex-col space-y-[10px]">
           <div>
             <button
-              class="py-[15px] px-[30px] bg-[whyte] text-[blak] rounded-[12px] border-1 border-black hover:bg-blue-600 cursor-pointer"
+              class="py-[15px] px-[30px] bg-[whyte] text-[blak] rounded-[12px] border-1 border-black hover:bg-blue-600 hover:border-transparent cursor-pointer"
             >
               Login
             </button>
           </div>
           <div>
             <button
-              class="py-[15px] px-[30px] bg-[#446d9b] text-[whyte] rounded-[12px] border-1 border-black hover:bg-blue-600 cursor-pointer"
+              class="py-[15px] px-[30px] bg-[#446d9b] text-[whyte] rounded-[12px] border-1 border-black hover:border-transparent hover:bg-blue-600 cursor-pointer"
             >
               Sign up
             </button>
@@ -99,25 +98,25 @@
       </div>
     </header>
 
-    <section class="flex flex-col gap-6 my-[40px] lg:my-[80px] text-center">
+    <section
+      class="flex flex-col justify-center items-center gap-6 my-[40px] lg:my-[80px] text-center"
+      id="hero"
+    >
       <div
         class="flex flex-col gap-6 w-full xs:max-w-[280px] sm:max-w-[500px] md:max-w-[700px] lg:max-w-[889px] mx-auto text-center"
       >
-        <div>
-          <h2
-            class="text-center font-semibold text-[40px] md:text-[50px] lg:font-[7xl] lg:text-[64px]"
-          >
-            Charge card made to keep up with you.
-          </h2>
-        </div>
-        <div>
-          <p
-            class="font-normal xs:text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
-          >
-            Enjoy an exclusive range of benefits and privileges designed to let
-            you get the most out of life
-          </p>
-        </div>
+        <h2
+          class="text-center font-semibold text-[40px] md:text-[50px] lg:font-[7xl] lg:text-[64px]"
+        >
+          Charge card made to keep up with you.
+        </h2>
+
+        <p
+          class="font-normal xs:text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px]"
+        >
+          Enjoy an exclusive range of benefits and privileges designed to let
+          you get the most out of life
+        </p>
 
         <div class="self-center">
           <img src="bank assets/Download app buttons.png" />
@@ -127,13 +126,12 @@
     </section>
 
     <section class="flex flex-col xs:gap-[60px] gap-[60px]">
-      <div>
-        <h5 class="text-center font-bold text-[16px] lg:text[20px]">
-          Used by the world's most innovative companies
-        </h5>
-      </div>
+      <h5 class="text-center font-bold text-[16px] lg:text[20px]">
+        Used by the world's most innovative companies
+      </h5>
+
       <div
-        class="flex gap-[80px] justify-center flex-wrap items-center text-center xs:gap-[40px] sm:gap-[70px] md:gap-[60px] lg:gap-[70px]"
+        class="flex justify-center items-center text-center gap-[20px] sm:gap-[70px] md:gap-[60px] lg:gap-[70px] overflow-x-scroll sm:overflow-x-visible flex-nowrap sm:flex-wrap"
       >
         <div>
           <img src="bank assets/Visa Inc. svg.svg" />
@@ -147,7 +145,7 @@
     </section>
 
     <section
-      class="my-[100px] flex flex-col items-center md:text-left lg:text-left gap-[60px] lg:gap-[83px] md:flex-row lg:flex-row xl:flex-row justify-center xs:text-center sm:text-center"
+      class="my-[100px] flex flex-col items-center md:text-left lg:text-left gap-[60px] lg:gap-[83px] md:flex-row justify-center xs:text-center sm:text-center xl:gap-[100px] 2xl:gap-[120px]"
     >
       <div class="flex flex-col gap-[30px]">
         <div>
@@ -155,9 +153,9 @@
             Features
           </button>
         </div>
-        <div>
-          <h3 class="font-semibold text-[48px]">No preset spending Limit</h3>
-        </div>
+
+        <h3 class="font-semibold text-[48px]">No preset spending Limit</h3>
+
         <div>
           <div class="flex gap-[10px] items-center">
             <div><img src="bank assets/Frame 2609626.jpg" /></div>
@@ -175,23 +173,21 @@
           </div>
         </div>
 
-        <div>
-          <p>
-            Learn More <span> <i class="fa-solid fa-arrow-right"></i></span>
-          </p>
-        </div>
+        <p>
+          Learn More <span> <i class="fa-solid fa-arrow-right"></i></span>
+        </p>
       </div>
 
-      <div class="max-w-[654px] w-full h-auto">
+      <div class="max-w-[654px] w-full md:max-w-[50%]">
         <img src="bank assets/Frame 2609638.jpg" />
       </div>
     </section>
 
     <section
-      class="my-[100px] flex flex-col items-center md:text-left lg:text-left gap-[60px] lg:gap-[83px] md:flex-row lg:flex-row xl:flex-row justify-center xs:text-center sm:text-center"
+      class="my-[100px] flex flex-col items-center md:text-left lg:text-left gap-[60px] lg:gap-[83px] md:flex-row lg:flex-row xl:flex-row xxl:flex-row justify-center xs:text-center sm:text-center xl:gap-[100px] 2xl:gap-[120px]"
     >
-      <div>
-        <img class="w-[645px]" src="bank assets/white.jpg" />
+      <div class="max-w-[654px] w-full md:max-w-1/2">
+        <img class="w-[654px]" src="bank assets/white.jpg" />
       </div>
       <div class="flex flex-col gap-[30px]">
         <div>
@@ -398,7 +394,7 @@
       <div><img src="bank assets/girl.png" /></div>
 
       <div
-        class="flex flex-col gap-[76px] md:flex-row md:gap-[40px] lg:flex-row"
+        class="sm:grid grid gap-x-26 gap-y-10 xl: gap-x-36 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
         <div
           class="flex flex-col gap-[10px] max-w-[313px] w-full h-auto text-center"
@@ -441,7 +437,7 @@
     </section>
 
     <section
-      class="flex flex-col gap-[60px] items-center max-w-[790px] w-full justify-center mx-auto text-center"
+      class="flex flex-col gap-[60px] items-center lg:max-w-[790px] 2xl:max-w-[1000px] w-full justify-center mx-auto text-center"
     >
       <div>
         <h3 class="font-semibold text-[40px] lg:text-[48px]">
@@ -459,7 +455,7 @@
           </p>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col gap-[20px] items-center">
           <div>
             <img src="bank assets/Ellipse 6.jpg" />
           </div>
@@ -470,14 +466,14 @@
             <div>
               <span
                 ><i
-                  class="fa-solid fa-arrow-left p-[5px] bg-[#EAF1F5] rounded-full"
+                  class="fa-solid fa-arrow-left p-[10px] bg-[#EAF1F5] rounded-full"
                 ></i
               ></span>
             </div>
             <div>
               <span
                 ><i
-                  class="fa-solid fa-arrow-right p-[5px] bg-[#EAF1F5] rounded-full"
+                  class="fa-solid fa-arrow-right p-[10px] bg-[#EAF1F5] rounded-full"
                 ></i
               ></span>
             </div>
@@ -487,24 +483,21 @@
     </section>
 
     <section
-      class="mt-[100px] mx-auto flex flex-col justify-center items-center gap-[60px] min-h-[100vh] max-w-[870px] w-full"
+      class="mt-[100px] mx-auto flex flex-col justify-center items-center gap-[60px] min-h-[100vh] max-w-[1000px] w-full"
     >
       <div class="flex flex-col gap-[30px] text-center">
-        <div>
-          <h3 class="font-semibold text-[40px] lg:text-[48px]">
-            Frequently asked questions
-          </h3>
-        </div>
-        <div>
-          <p class="text-[20px]">
-            Find quick answers to common queries in our Frequently Asked
-            Questions section.
-          </p>
+        <h3 class="font-semibold text-[40px] lg:text-[48px]">
+          Frequently asked questions
+        </h3>
 
-          <p class="text-[20px]">
-            Your key to instant clarity on all things related to our charge card
-          </p>
-        </div>
+        <p class="text-[20px]">
+          Find quick answers to common queries in our Frequently Asked Questions
+          section.
+        </p>
+
+        <p class="text-[20px]">
+          Your key to instant clarity on all things related to our charge card
+        </p>
       </div>
 
       <div>
@@ -592,10 +585,10 @@
     </section>
 
     <section
-      class="mt-[100px] flex flex-col md:flex-row lg:flex-row gap-[50px] lg:gap-[83px] justify-center"
+      class="mt-[100px] flex flex-col md:flex-row lg:flex-row gap-[50px] lg:gap-[180px] justify-center"
     >
       <div
-        class="flex flex-col gap-[40px] lg:gap-[20px] items-left sm:items-center lg:py-[158px]"
+        class="flex flex-col gap-[40px] lg:gap-[20px] items-left lg:py-[158px]"
       >
         <div>
           <button class="bg-[#EAF1F5] py-[10px] px-[12px] rounded-[12px]">
@@ -626,7 +619,7 @@
     </section>
 
     <footer
-      class="my-[100px] flex justify-center flex-wrap gap-[60px] lg:gap-[100px]"
+      class="my-[100px] flex justify-center flex-wrap gap-[60px] lg:gap-[180px]"
     >
       <div class="flex items-left flex-col gap-[24px]">
         <div><img src="bank assets/Group 14.svg" /></div>
